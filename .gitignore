@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-*/
+.vite/
+*.log
+.DS_Store
+Thumbs.db
+
+# Original photos. They contain EXIF (GPS location, device, timestamps).
+# Never commit them. `npm run images` writes cleaned WebP files to public/images/places/.
+photos-src/
+
+# Local editor and environment files
+.env
+.env.*
+.vscode/*
+!.vscode/extensions.json

@@ -1,0 +1,121 @@
+# Build, check and deploy PURINAT LIFE OS to GitHub Pages.
+#   push to main      -> lint, type-check, validate data, test, build, verify, deploy, then Lighthouse (mobile)
+#   pull request      -> the same checks and build, no deploy
+#   manual run        -> Actions tab -> "Deploy to GitHub Pages" -> Run workflow
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Same permissions as GitHub's official Pages starter workflow.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Check and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        # npm ci needs package-lock.json. Commit the lock file created by your first local `npm install`.
+        run: |
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type-check
+        run: npm run type-check
+
+      - name: Validate data (schemas, ids, coordinates, photos, sensitive data)
+        run: npm run validate:data
+
+      - name: Test
+        run: npm test
+
+      - name: Configure Pages
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+
+      - name: Set base path
+        # Project site: /<repo>/ . User site or custom domain: / . Pull requests build with /<repo>/.
+        env:
+          EVENT: ${{ github.event_name }}
+          REPO: ${{ github.event.repository.name }}
+          PAGES_BASE: ${{ steps.pages.outputs.base_path }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then base="/$REPO"; else base="$PAGES_BASE"; fi
+          echo "BASE_PATH=${base}/" >> "$GITHUB_ENV"
+          echo "Base path: ${base}/"
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify build output
+        run: npm run check:dist
+
+      - name: Upload site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+  lighthouse:
+    name: Lighthouse (mobile)
+    if: github.event_name != 'pull_request'
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Check out (for lighthouserc.json)
+        uses: actions/checkout@v7
+
+      - name: Run Lighthouse on the live site
+        # Reports: the "lighthouse-results" artifact of this run, plus temporary public links in the log
+        # (kept 7 days by Google; the site itself is public anyway).
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            ${{ needs.deploy.outputs.page_url }}
+            ${{ needs.deploy.outputs.page_url }}speaklog/
+            ${{ needs.deploy.outputs.page_url }}miles/
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
