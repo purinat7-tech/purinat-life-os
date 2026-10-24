@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schemas/phrases.schema.json",
+  "schema_version": 1,
+  "phrases": [
+    {
+      "id": "demo-phrase-1",
+      "phrase": "Could I get a window seat?",
+      "natural": "Could I get a window seat, please?",
+      "situation": "DEMO: airport check-in",
+      "category": "travel",
+      "status": "MASTERED",
+      "added": "2026-09-01"
+    },
+    {
+      "id": "demo-phrase-2",
+      "phrase": "The highlight of the trip was...",
+      "natural": "The highlight of the trip was...",
+      "situation": "DEMO: telling a story",
+      "category": "small-talk",
+      "status": "LEARNING",
+      "added": "2026-10-01"
+    },
+    {
+      "id": "demo-phrase-3",
+      "phrase": "I'm training for a marathon.",
+      "natural": "I'm training for a marathon.",
+      "situation": "DEMO: small talk",
+      "category": "running",
+      "status": "NEW",
+      "added": "2026-10-20"
+    }
+  ]
+}

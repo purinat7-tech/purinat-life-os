@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/dreams.schema.json",
+  "schema_version": 1,
+  "dreams": [
+    {
+      "id": "kazakhstan-2027",
+      "destination": "Kazakhstan",
+      "country_code": "KZ",
+      "target_year": 2027,
+      "target_month": 5,
+      "status": "NEXT",
+      "budget_thb_per_person": "TODO",
+      "priority": "TODO",
+      "notes": "May 2027 is tentative.",
+      "lat": 48.0,
+      "lng": 68.0,
+      "coord_source": "https://www.indexmundi.com/kazakhstan/geographic_coordinates.html",
+      "coord_verified": false
+    },
+    {
+      "id": "shanghai-2027",
+      "destination": "Shanghai",
+      "country_code": "CN",
+      "target_year": 2027,
+      "status": "NEXT",
+      "budget_thb_per_person": "TODO",
+      "priority": "TODO",
+      "notes": "TODO",
+      "lat": 31.2325,
+      "lng": 121.46917,
+      "coord_source": "https://en.wikipedia.org/wiki/Shanghai",
+      "coord_verified": false
+    },
+    {
+      "id": "chamonix-2028",
+      "destination": "Chamonix",
+      "country_code": "FR",
+      "target_year": 2028,
+      "status": "CONDITIONAL",
+      "budget_thb_per_person": "TODO",
+      "priority": "TODO",
+      "depends_on": "Lottery result",
+      "notes": "Iceland 2028 is the backup if the lottery does not work out.",
+      "lat": 45.9231,
+      "lng": 6.8697,
+      "coord_source": "https://en.wikipedia.org/wiki/Chamonix",
+      "coord_verified": false
+    },
+    {
+      "id": "iceland-2028",
+      "destination": "Iceland",
+      "country_code": "IS",
+      "target_year": 2028,
+      "status": "BACKUP",
+      "budget_thb_per_person": "TODO",
+      "priority": "TODO",
+      "backup_of": "chamonix-2028",
+      "notes": "Backup for Chamonix 2028.",
+      "lat": 65.0,
+      "lng": -18.0,
+      "coord_source": "https://www.indexmundi.com/iceland/geographic_coordinates.html",
+      "coord_verified": false
+    },
+    {
+      "id": "dolomites",
+      "destination": "Dolomites",
+      "country_code": "IT",
+      "target_year": "TODO",
+      "status": "DREAM",
+      "budget_thb_per_person": "TODO",
+      "priority": "TODO",
+      "notes": "TODO",
+      "lat": 46.433,
+      "lng": 11.85,
+      "coord_source": "https://en.wikipedia.org/wiki/Dolomites",
+      "coord_verified": false
+    }
+  ]
+}

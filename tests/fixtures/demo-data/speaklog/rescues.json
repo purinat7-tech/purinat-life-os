@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../../schemas/rescues.schema.json",
+  "schema_version": 1,
+  "rescues": [
+    {
+      "id": "rescue-2026-10-20-001",
+      "date": "2026-10-20",
+      "wanted_to_say": "DEMO: I wanted to say this in Thai",
+      "my_version": "DEMO my version",
+      "natural_version": "DEMO natural version",
+      "category": "travel"
+    }
+  ]
+}

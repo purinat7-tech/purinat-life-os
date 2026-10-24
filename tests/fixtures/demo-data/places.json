@@ -1,0 +1,208 @@
+{
+  "$schema": "../../../schemas/places.schema.json",
+  "schema_version": 1,
+  "places": [
+    {
+      "id": "carlton-gardens",
+      "trip_id": "australia-2026",
+      "name": "Carlton Gardens",
+      "city": "Melbourne",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -37.80611,
+      "lng": 144.97028,
+      "coord_source": "https://en.wikipedia.org/wiki/Carlton_Gardens",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "landmark",
+        "nature"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "memorial-arch",
+      "trip_id": "australia-2026",
+      "name": "Memorial Arch",
+      "city": "Eastern View",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -38.47205,
+      "lng": 144.04471,
+      "coord_source": "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/Walks-and-Attractions/Memorial-Arch",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "twelve-apostles",
+      "trip_id": "australia-2026",
+      "name": "Twelve Apostles",
+      "city": "Port Campbell",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -38.66583,
+      "lng": 143.10444,
+      "coord_source": "https://en.wikipedia.org/wiki/The_Twelve_Apostles_(Victoria)",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "nature",
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "loch-ard-gorge",
+      "trip_id": "australia-2026",
+      "name": "Loch Ard Gorge",
+      "city": "Port Campbell",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -38.64658,
+      "lng": 143.0705,
+      "coord_source": "https://en.wikipedia.org/wiki/Loch_Ard_Gorge",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "nature"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "sydney-opera-house",
+      "trip_id": "australia-2026",
+      "name": "Sydney Opera House",
+      "city": "Sydney",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.85681,
+      "lng": 151.21514,
+      "coord_source": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "mrs-macquaries-point",
+      "trip_id": "australia-2026",
+      "name": "Mrs Macquarie's Point",
+      "city": "Sydney",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.85947,
+      "lng": 151.2222,
+      "coord_source": "https://en.wikipedia.org/wiki/Mrs_Macquarie%27s_Chair",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "hornby-lighthouse",
+      "trip_id": "australia-2026",
+      "name": "Hornby Lighthouse",
+      "city": "Watsons Bay",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.83361,
+      "lng": 151.28111,
+      "coord_source": "https://en.wikipedia.org/wiki/Hornby_Lighthouse",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "camp-cove",
+      "trip_id": "australia-2026",
+      "name": "Camp Cove",
+      "city": "Watsons Bay",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.84025,
+      "lng": 151.27831,
+      "coord_source": "https://www.woollahra.nsw.gov.au/Recreation/List-of-Parks-Reserves-and-Playgrounds/Camp-Cove-Beach",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "beach"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "henry-lawson-reserve",
+      "trip_id": "australia-2026",
+      "name": "Henry Lawson Reserve",
+      "city": "McMahons Point",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.84868,
+      "lng": 151.20417,
+      "coord_source": "https://mapcarta.com/N871670313",
+      "coord_verified": false,
+      "coord_note": "This is the Henry Lawson Reserve at McMahons Point (North Sydney), as specified by the owner. The coordinates are an OpenStreetMap point on Henry Lawson Avenue beside the reserve; not yet verified.",
+      "visited_date": "TODO",
+      "category": [],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    },
+    {
+      "id": "bondi-icebergs",
+      "trip_id": "australia-2026",
+      "name": "Bondi Icebergs",
+      "city": "Bondi",
+      "country_code": "AU",
+      "visit_confirmed": false,
+      "lat": -33.89513,
+      "lng": 151.27434,
+      "coord_source": "https://en.wikipedia.org/wiki/Bondi_Icebergs_Club",
+      "coord_verified": false,
+      "visited_date": "TODO",
+      "category": [
+        "beach",
+        "landmark"
+      ],
+      "rating": "TODO",
+      "memory": "TODO",
+      "photo": "TODO",
+      "photo_alt": "TODO"
+    }
+  ]
+}

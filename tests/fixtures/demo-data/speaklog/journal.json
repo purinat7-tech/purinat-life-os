@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schemas/journal.schema.json",
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "demo-note-1",
+      "date": "2026-10-21",
+      "topic": "DEMO topic",
+      "title": "DEMO note",
+      "body": "DEMO paragraph one.\n\nDEMO paragraph two."
+    }
+  ]
+}

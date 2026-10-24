@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../schemas/library.schema.json",
+  "schema_version": 1,
+  "library": [
+    {
+      "id": "demo-movie",
+      "title": "DEMO Movie",
+      "kind": "movie",
+      "status": "completed",
+      "difficulty": 3,
+      "subtitle_mode": "english",
+      "comprehension_pct": 72,
+      "useful_phrases": [
+        "DEMO phrase"
+      ],
+      "notes": "DEMO notes"
+    },
+    {
+      "id": "demo-podcast",
+      "title": "DEMO Podcast",
+      "kind": "podcast",
+      "status": "watching",
+      "difficulty": 2,
+      "subtitle_mode": "none",
+      "useful_phrases": [],
+      "notes": ""
+    }
+  ]
+}

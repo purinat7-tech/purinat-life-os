@@ -1,0 +1,1100 @@
+{
+  "$schema": "../../../../schemas/sessions.schema.json",
+  "schema_version": 1,
+  "sessions": [
+    {
+      "id": "2026-08-03-001",
+      "date": "2026-08-03",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 1 (speaking)",
+      "scores": {
+        "fluency": 2.6,
+        "grammar": 2.8,
+        "vocabulary": 2.6,
+        "communication": 3.1
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-08-04-001",
+      "date": "2026-08-04",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 2 (listening)",
+      "comprehension_pct": 62
+    },
+    {
+      "id": "2026-08-05-001",
+      "date": "2026-08-05",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 3 (shadowing)"
+    },
+    {
+      "id": "2026-08-06-001",
+      "date": "2026-08-06",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 4 (storytelling)",
+      "scores": {
+        "fluency": 2.6,
+        "grammar": 2.8,
+        "vocabulary": 2.8,
+        "communication": 3.1
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-08-08-001",
+      "date": "2026-08-08",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 6 (travel-simulation)",
+      "scores": {
+        "fluency": 2.9,
+        "grammar": 2.9,
+        "vocabulary": 2.7,
+        "communication": 3.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "airport"
+    },
+    {
+      "id": "2026-08-09-001",
+      "date": "2026-08-09",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 7 (reading)"
+    },
+    {
+      "id": "2026-08-10-001",
+      "date": "2026-08-10",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 8 (speaking)",
+      "scores": {
+        "fluency": 2.8,
+        "grammar": 2.9,
+        "vocabulary": 2.9,
+        "communication": 3.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "articles"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-08-11-001",
+      "date": "2026-08-11",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 9 (listening)",
+      "comprehension_pct": 76
+    },
+    {
+      "id": "2026-08-12-001",
+      "date": "2026-08-12",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 10 (shadowing)"
+    },
+    {
+      "id": "2026-08-13-001",
+      "date": "2026-08-13",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 11 (storytelling)",
+      "scores": {
+        "fluency": 2.9,
+        "grammar": 3.0,
+        "vocabulary": 2.9,
+        "communication": 3.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-08-14-001",
+      "date": "2026-08-14",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 12 (movie)",
+      "comprehension_pct": 62
+    },
+    {
+      "id": "2026-08-15-001",
+      "date": "2026-08-15",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 13 (travel-simulation)",
+      "scores": {
+        "fluency": 2.8,
+        "grammar": 3.0,
+        "vocabulary": 2.8,
+        "communication": 3.3
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ],
+      "scenario": "hotel"
+    },
+    {
+      "id": "2026-08-17-001",
+      "date": "2026-08-17",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 15 (speaking)",
+      "scores": {
+        "fluency": 3.0,
+        "grammar": 3.0,
+        "vocabulary": 2.9,
+        "communication": 3.3
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-08-18-001",
+      "date": "2026-08-18",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 16 (listening)",
+      "comprehension_pct": 55
+    },
+    {
+      "id": "2026-08-19-001",
+      "date": "2026-08-19",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 17 (shadowing)"
+    },
+    {
+      "id": "2026-08-20-001",
+      "date": "2026-08-20",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 18 (storytelling)",
+      "scores": {
+        "fluency": 3.1,
+        "grammar": 3.1,
+        "vocabulary": 2.9,
+        "communication": 3.4
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-08-21-001",
+      "date": "2026-08-21",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 19 (movie)",
+      "comprehension_pct": 76
+    },
+    {
+      "id": "2026-08-22-001",
+      "date": "2026-08-22",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 20 (travel-simulation)",
+      "scores": {
+        "fluency": 3.0,
+        "grammar": 3.1,
+        "vocabulary": 3.0,
+        "communication": 3.4
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "articles"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "restaurant"
+    },
+    {
+      "id": "2026-08-23-001",
+      "date": "2026-08-23",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 21 (reading)"
+    },
+    {
+      "id": "2026-08-24-001",
+      "date": "2026-08-24",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 22 (speaking)",
+      "scores": {
+        "fluency": 2.9,
+        "grammar": 3.1,
+        "vocabulary": 3.0,
+        "communication": 3.4
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-08-26-001",
+      "date": "2026-08-26",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 24 (shadowing)"
+    },
+    {
+      "id": "2026-08-27-001",
+      "date": "2026-08-27",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 25 (storytelling)",
+      "scores": {
+        "fluency": 3.0,
+        "grammar": 3.2,
+        "vocabulary": 3.0,
+        "communication": 3.5
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-08-28-001",
+      "date": "2026-08-28",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 26 (movie)",
+      "comprehension_pct": 55
+    },
+    {
+      "id": "2026-08-29-001",
+      "date": "2026-08-29",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 27 (travel-simulation)",
+      "scores": {
+        "fluency": 3.2,
+        "grammar": 3.2,
+        "vocabulary": 3.1,
+        "communication": 3.5
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ],
+      "scenario": "car-rental"
+    },
+    {
+      "id": "2026-08-30-001",
+      "date": "2026-08-30",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 28 (reading)"
+    },
+    {
+      "id": "2026-08-31-001",
+      "date": "2026-08-31",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 29 (speaking)",
+      "scores": {
+        "fluency": 3.1,
+        "grammar": 3.2,
+        "vocabulary": 3.0,
+        "communication": 3.5
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-09-01-001",
+      "date": "2026-09-01",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 30 (listening)",
+      "comprehension_pct": 83
+    },
+    {
+      "id": "2026-09-02-001",
+      "date": "2026-09-02",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 31 (shadowing)"
+    },
+    {
+      "id": "2026-09-04-001",
+      "date": "2026-09-04",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 33 (movie)",
+      "comprehension_pct": 69
+    },
+    {
+      "id": "2026-09-05-001",
+      "date": "2026-09-05",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 34 (travel-simulation)",
+      "scores": {
+        "fluency": 3.1,
+        "grammar": 3.3,
+        "vocabulary": 3.1,
+        "communication": 3.6
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "small-talk"
+    },
+    {
+      "id": "2026-09-06-001",
+      "date": "2026-09-06",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 35 (reading)"
+    },
+    {
+      "id": "2026-09-07-001",
+      "date": "2026-09-07",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 36 (speaking)",
+      "scores": {
+        "fluency": 3.3,
+        "grammar": 3.3,
+        "vocabulary": 3.3,
+        "communication": 3.6
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-09-08-001",
+      "date": "2026-09-08",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 37 (listening)",
+      "comprehension_pct": 62
+    },
+    {
+      "id": "2026-09-09-001",
+      "date": "2026-09-09",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 38 (shadowing)"
+    },
+    {
+      "id": "2026-09-10-001",
+      "date": "2026-09-10",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 39 (storytelling)",
+      "scores": {
+        "fluency": 3.4,
+        "grammar": 3.4,
+        "vocabulary": 3.3,
+        "communication": 3.7
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-09-11-001",
+      "date": "2026-09-11",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 40 (movie)",
+      "comprehension_pct": 83
+    },
+    {
+      "id": "2026-09-13-001",
+      "date": "2026-09-13",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 42 (reading)"
+    },
+    {
+      "id": "2026-09-14-001",
+      "date": "2026-09-14",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 43 (speaking)",
+      "scores": {
+        "fluency": 3.2,
+        "grammar": 3.4,
+        "vocabulary": 3.3,
+        "communication": 3.7
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-09-15-001",
+      "date": "2026-09-15",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 44 (listening)",
+      "comprehension_pct": 76
+    },
+    {
+      "id": "2026-09-16-001",
+      "date": "2026-09-16",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 45 (shadowing)"
+    },
+    {
+      "id": "2026-09-17-001",
+      "date": "2026-09-17",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 46 (storytelling)",
+      "scores": {
+        "fluency": 3.3,
+        "grammar": 3.5,
+        "vocabulary": 3.3,
+        "communication": 3.8
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-09-18-001",
+      "date": "2026-09-18",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 47 (movie)",
+      "comprehension_pct": 62
+    },
+    {
+      "id": "2026-09-19-001",
+      "date": "2026-09-19",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 48 (travel-simulation)",
+      "scores": {
+        "fluency": 3.5,
+        "grammar": 3.5,
+        "vocabulary": 3.5,
+        "communication": 3.8
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "airport"
+    },
+    {
+      "id": "2026-09-20-001",
+      "date": "2026-09-20",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 49 (reading)"
+    },
+    {
+      "id": "2026-09-22-001",
+      "date": "2026-09-22",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 51 (listening)",
+      "comprehension_pct": 55
+    },
+    {
+      "id": "2026-09-23-001",
+      "date": "2026-09-23",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 52 (shadowing)"
+    },
+    {
+      "id": "2026-09-24-001",
+      "date": "2026-09-24",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 53 (storytelling)",
+      "scores": {
+        "fluency": 3.5,
+        "grammar": 3.6,
+        "vocabulary": 3.4,
+        "communication": 3.9
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-09-25-001",
+      "date": "2026-09-25",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 54 (movie)",
+      "comprehension_pct": 76
+    },
+    {
+      "id": "2026-09-26-001",
+      "date": "2026-09-26",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 55 (travel-simulation)",
+      "scores": {
+        "fluency": 3.4,
+        "grammar": 3.6,
+        "vocabulary": 3.5,
+        "communication": 3.9
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ],
+      "scenario": "hotel"
+    },
+    {
+      "id": "2026-09-27-001",
+      "date": "2026-09-27",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 56 (reading)"
+    },
+    {
+      "id": "2026-09-28-001",
+      "date": "2026-09-28",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 57 (speaking)",
+      "scores": {
+        "fluency": 3.6,
+        "grammar": 3.6,
+        "vocabulary": 3.4,
+        "communication": 3.9
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-09-29-001",
+      "date": "2026-09-29",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 58 (listening)",
+      "comprehension_pct": 69
+    },
+    {
+      "id": "2026-10-01-001",
+      "date": "2026-10-01",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 60 (storytelling)",
+      "scores": {
+        "fluency": 3.7,
+        "grammar": 3.7,
+        "vocabulary": 3.6,
+        "communication": 4.0
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-10-02-001",
+      "date": "2026-10-02",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 61 (movie)",
+      "comprehension_pct": 55
+    },
+    {
+      "id": "2026-10-03-001",
+      "date": "2026-10-03",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 62 (travel-simulation)",
+      "scores": {
+        "fluency": 3.6,
+        "grammar": 3.7,
+        "vocabulary": 3.6,
+        "communication": 4.0
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "articles"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "restaurant"
+    },
+    {
+      "id": "2026-10-04-001",
+      "date": "2026-10-04",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 63 (reading)"
+    },
+    {
+      "id": "2026-10-05-001",
+      "date": "2026-10-05",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 64 (speaking)",
+      "scores": {
+        "fluency": 3.5,
+        "grammar": 3.7,
+        "vocabulary": 3.7,
+        "communication": 4.0
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-10-06-001",
+      "date": "2026-10-06",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 65 (listening)",
+      "comprehension_pct": 83
+    },
+    {
+      "id": "2026-10-07-001",
+      "date": "2026-10-07",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 66 (shadowing)"
+    },
+    {
+      "id": "2026-10-08-001",
+      "date": "2026-10-08",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 67 (storytelling)",
+      "scores": {
+        "fluency": 3.6,
+        "grammar": 3.8,
+        "vocabulary": 3.7,
+        "communication": 4.1
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-10-10-001",
+      "date": "2026-10-10",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 69 (travel-simulation)",
+      "scores": {
+        "fluency": 3.8,
+        "grammar": 3.8,
+        "vocabulary": 3.6,
+        "communication": 4.1
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ],
+      "scenario": "car-rental"
+    },
+    {
+      "id": "2026-10-11-001",
+      "date": "2026-10-11",
+      "type": "reading",
+      "duration_min": 25,
+      "topic": "DEMO session 70 (reading)"
+    },
+    {
+      "id": "2026-10-12-001",
+      "date": "2026-10-12",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 71 (speaking)",
+      "scores": {
+        "fluency": 3.8,
+        "grammar": 3.9,
+        "vocabulary": 3.8,
+        "communication": 4.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "past-tense"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    },
+    {
+      "id": "2026-10-13-001",
+      "date": "2026-10-13",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 72 (listening)",
+      "comprehension_pct": 62
+    },
+    {
+      "id": "2026-10-14-001",
+      "date": "2026-10-14",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 73 (shadowing)"
+    },
+    {
+      "id": "2026-10-15-001",
+      "date": "2026-10-15",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 74 (storytelling)",
+      "scores": {
+        "fluency": 3.8,
+        "grammar": 3.9,
+        "vocabulary": 3.7,
+        "communication": 4.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "articles"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-10-16-001",
+      "date": "2026-10-16",
+      "type": "movie",
+      "duration_min": 95,
+      "topic": "DEMO session 75 (movie)",
+      "comprehension_pct": 83
+    },
+    {
+      "id": "2026-10-17-001",
+      "date": "2026-10-17",
+      "type": "travel-simulation",
+      "duration_min": 22,
+      "topic": "DEMO session 76 (travel-simulation)",
+      "scores": {
+        "fluency": 3.7,
+        "grammar": 3.9,
+        "vocabulary": 3.9,
+        "communication": 4.2
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "word-order"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ],
+      "scenario": "small-talk"
+    },
+    {
+      "id": "2026-10-19-001",
+      "date": "2026-10-19",
+      "type": "speaking",
+      "duration_min": 18,
+      "topic": "DEMO session 78 (speaking)",
+      "scores": {
+        "fluency": 4.0,
+        "grammar": 4.0,
+        "vocabulary": 3.8,
+        "communication": 4.3
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "plural-s"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A",
+        "DEMO phrase B"
+      ]
+    },
+    {
+      "id": "2026-10-20-001",
+      "date": "2026-10-20",
+      "type": "listening",
+      "duration_min": 30,
+      "topic": "DEMO session 79 (listening)",
+      "comprehension_pct": 76
+    },
+    {
+      "id": "2026-10-21-001",
+      "date": "2026-10-21",
+      "type": "shadowing",
+      "duration_min": 15,
+      "topic": "DEMO session 80 (shadowing)"
+    },
+    {
+      "id": "2026-10-22-001",
+      "date": "2026-10-22",
+      "type": "storytelling",
+      "duration_min": 20,
+      "topic": "DEMO session 81 (storytelling)",
+      "scores": {
+        "fluency": 4.0,
+        "grammar": 4.0,
+        "vocabulary": 3.8,
+        "communication": 4.3
+      },
+      "focus": "DEMO focus",
+      "corrections": [
+        {
+          "said": "DEMO said",
+          "natural": "DEMO natural",
+          "tag": "prepositions"
+        }
+      ],
+      "new_phrases": [
+        "DEMO phrase A"
+      ]
+    }
+  ]
+}
