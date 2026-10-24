@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library.schema.json",
+  "title": "SPEAKLOG Library",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "library"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "library": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "status",
+        "difficulty",
+        "subtitle_mode",
+        "useful_phrases",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "title": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "kind": {
+          "enum": [
+            "movie",
+            "series",
+            "podcast",
+            "youtube"
+          ]
+        },
+        "status": {
+          "enum": [
+            "want",
+            "watching",
+            "completed",
+            "rewatch"
+          ]
+        },
+        "difficulty": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ]
+        },
+        "subtitle_mode": {
+          "enum": [
+            "none",
+            "english",
+            "thai",
+            "english+thai"
+          ]
+        },
+        "comprehension_pct": {
+          "$ref": "common.schema.json#/$defs/percent"
+        },
+        "useful_phrases": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/shortText"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "completed_date": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        }
+      }
+    }
+  }
+}

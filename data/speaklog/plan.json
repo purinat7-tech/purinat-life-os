@@ -1,0 +1,96 @@
+{
+  "$schema": "../../schemas/plan.schema.json",
+  "schema_version": 1,
+  "plan": {
+    "next_trip": {
+      "name": "Kazakhstan",
+      "dream_id": "kazakhstan-2027",
+      "target_month": "2027-05",
+      "tentative": true
+    },
+    "phases": {
+      "is_default": true,
+      "items": [
+        {
+          "name": "Base",
+          "weeks": null,
+          "focus": "Consistency first: short daily sessions, listening volume and shadowing."
+        },
+        {
+          "name": "Build",
+          "weeks": 6,
+          "focus": "Longer speaking sessions and storytelling; fix the top recurring mistakes."
+        },
+        {
+          "name": "Trip-Specific",
+          "weeks": 4,
+          "focus": "Travel simulations for every scenario: airport, hotel, restaurant, shopping, car rental, small talk."
+        },
+        {
+          "name": "Peak",
+          "weeks": 2,
+          "focus": "The hardest simulations and problem solving, without Thai subtitles."
+        },
+        {
+          "name": "Taper",
+          "weeks": 1,
+          "focus": "Light Phrase Bank review. Arrive confident and rested."
+        }
+      ]
+    },
+    "weekly_goals": {
+      "is_default": true,
+      "minutes": 150,
+      "speaking_sessions": 3,
+      "listening_minutes": 75,
+      "new_phrases": 10
+    },
+    "weekly_template": {
+      "is_default": true,
+      "days": [
+        {
+          "day": "Mon",
+          "activity": "shadowing",
+          "minutes": 20,
+          "note": "Shadow one short clip"
+        },
+        {
+          "day": "Tue",
+          "activity": "speaking",
+          "minutes": 20,
+          "note": "Speaking session, then log a Session Card"
+        },
+        {
+          "day": "Wed",
+          "activity": "listening",
+          "minutes": 30,
+          "note": "Podcast or YouTube"
+        },
+        {
+          "day": "Thu",
+          "activity": "storytelling",
+          "minutes": 15,
+          "note": "Tell one story from a trip"
+        },
+        {
+          "day": "Fri",
+          "activity": "movie",
+          "minutes": 45,
+          "note": "Movie or series with English subtitles"
+        },
+        {
+          "day": "Sat",
+          "activity": "travel-simulation",
+          "minutes": 20,
+          "note": "One trip scenario"
+        },
+        {
+          "day": "Sun",
+          "activity": "rest",
+          "minutes": 0,
+          "note": "Rest, or review the Phrase Bank"
+        }
+      ]
+    }
+  }
+}

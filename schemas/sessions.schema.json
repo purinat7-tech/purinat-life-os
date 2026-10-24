@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sessions.schema.json",
+  "title": "SPEAKLOG sessions",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "sessions"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "$ref": "session-card.schema.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "PURINAT LIFE OS shared definitions",
+  "$defs": {
+    "todo": {
+      "const": "TODO",
+      "description": "Placeholder for a value that has not been supplied yet. Never counted in stats."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 80,
+      "description": "Lowercase words joined by hyphens, e.g. twelve-apostles."
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "format": "date"
+    },
+    "isoDateOrTodo": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/isoDate"
+        },
+        {
+          "$ref": "#/$defs/todo"
+        }
+      ]
+    },
+    "countryCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2, e.g. AU, JP."
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "placeCategory": {
+      "enum": [
+        "nature",
+        "landmark",
+        "beach",
+        "mountain",
+        "road-trip",
+        "coffee",
+        "food",
+        "shopping",
+        "photography",
+        "hiking"
+      ]
+    },
+    "phraseCategory": {
+      "enum": [
+        "travel",
+        "running",
+        "photography",
+        "coffee",
+        "work",
+        "small-talk"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "0-5 scale."
+    },
+    "percent": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "latOrTodo": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/latitude"
+        },
+        {
+          "$ref": "#/$defs/todo"
+        }
+      ]
+    },
+    "lngOrTodo": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/longitude"
+        },
+        {
+          "$ref": "#/$defs/todo"
+        }
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://",
+      "format": "uri"
+    },
+    "sessionId": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{3}$",
+      "description": "Session date + 3-digit counter, e.g. 2026-10-23-001."
+    }
+  }
+}

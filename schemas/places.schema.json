@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "places.schema.json",
+  "title": "MILES places",
+  "description": "Places with exactly one hero photo each.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "places"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/place"
+      }
+    }
+  },
+  "$defs": {
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "trip_id",
+        "name",
+        "city",
+        "country_code",
+        "visit_confirmed",
+        "lat",
+        "lng",
+        "visited_date",
+        "category",
+        "rating",
+        "memory",
+        "photo",
+        "photo_alt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "trip_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "city": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "country_code": {
+          "$ref": "common.schema.json#/$defs/countryCode"
+        },
+        "visit_confirmed": {
+          "type": "boolean",
+          "description": "true only when the owner has confirmed this visit. Suggested places stay false and never count as visits."
+        },
+        "lat": {
+          "$ref": "common.schema.json#/$defs/latOrTodo"
+        },
+        "lng": {
+          "$ref": "common.schema.json#/$defs/lngOrTodo"
+        },
+        "coord_source": {
+          "$ref": "common.schema.json#/$defs/url"
+        },
+        "coord_verified": {
+          "type": "boolean"
+        },
+        "coord_note": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "visited_date": {
+          "$ref": "common.schema.json#/$defs/isoDateOrTodo"
+        },
+        "category": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/placeCategory"
+          },
+          "uniqueItems": true
+        },
+        "rating": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ]
+        },
+        "memory": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "photo": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            },
+            {
+              "type": "string",
+              "pattern": "^images/places/[a-z0-9]+(?:-[a-z0-9]+)*\\.webp$"
+            }
+          ],
+          "description": "Exactly one hero photo: images/places/<name>.webp (WebP, max 1600 px, under 300 KB, no metadata)."
+        },
+        "photo_alt": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "camera": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "lens": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "focal_length_mm": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2000
+        },
+        "best_time": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rescues.schema.json",
+  "title": "SPEAKLOG Sentence Rescue",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "rescues"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "rescues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rescue"
+      }
+    }
+  },
+  "$defs": {
+    "rescue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "date",
+        "wanted_to_say",
+        "my_version",
+        "natural_version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^rescue-\\d{4}-\\d{2}-\\d{2}-\\d{3}$"
+        },
+        "date": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "wanted_to_say": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "my_version": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "natural_version": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "category": {
+          "$ref": "common.schema.json#/$defs/phraseCategory"
+        },
+        "note": {
+          "$ref": "common.schema.json#/$defs/text"
+        }
+      }
+    }
+  }
+}

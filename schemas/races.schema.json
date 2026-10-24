@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "races.schema.json",
+  "title": "Races (never counted in travel stats)",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "races"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "races": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/race"
+      }
+    }
+  },
+  "$defs": {
+    "race": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "trip_id",
+        "name",
+        "date",
+        "city",
+        "country_code",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "trip_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "date": {
+          "$ref": "common.schema.json#/$defs/isoDateOrTodo"
+        },
+        "city": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "country_code": {
+          "$ref": "common.schema.json#/$defs/countryCode"
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/text"
+        }
+      }
+    }
+  }
+}

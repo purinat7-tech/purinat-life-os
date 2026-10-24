@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dreams.schema.json",
+  "title": "MILES Dream Board",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dreams"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "dreams": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dream"
+      }
+    }
+  },
+  "$defs": {
+    "dream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "destination",
+        "country_code",
+        "target_year",
+        "status",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "destination": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "country_code": {
+          "$ref": "common.schema.json#/$defs/countryCode"
+        },
+        "target_year": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 2000,
+              "maximum": 2100
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ]
+        },
+        "target_month": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "status": {
+          "enum": [
+            "NEXT",
+            "DREAM",
+            "CONDITIONAL",
+            "BACKUP"
+          ]
+        },
+        "budget_thb_per_person": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ]
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ],
+          "description": "1 = highest."
+        },
+        "depends_on": {
+          "$ref": "common.schema.json#/$defs/shortText",
+          "description": "What this dream depends on, e.g. a lottery result."
+        },
+        "backup_of": {
+          "$ref": "common.schema.json#/$defs/id",
+          "description": "Id of the dream this one is the backup for."
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "lat": {
+          "$ref": "common.schema.json#/$defs/latitude"
+        },
+        "lng": {
+          "$ref": "common.schema.json#/$defs/longitude"
+        },
+        "coord_source": {
+          "$ref": "common.schema.json#/$defs/url"
+        },
+        "coord_verified": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

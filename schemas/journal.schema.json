@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "journal.schema.json",
+  "title": "SPEAKLOG Journal",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "entries"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "date",
+        "topic",
+        "title",
+        "body"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "date": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "topic": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "title": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000,
+          "description": "Plain text. Blank lines separate paragraphs."
+        }
+      }
+    }
+  }
+}

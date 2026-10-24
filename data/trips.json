@@ -1,0 +1,40 @@
+{
+  "$schema": "../schemas/trips.schema.json",
+  "schema_version": 1,
+  "trips": [
+    {
+      "id": "australia-2026",
+      "name": "Australia 2026",
+      "country_code": "AU",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-20",
+      "cities": ["Melbourne", "Torquay", "Bells Beach", "Lorne", "Apollo Bay", "Port Campbell", "Sydney", "Watsons Bay", "Bondi"],
+      "tags": [],
+      "summary": "TODO",
+      "hero_place_id": "TODO",
+      "road_trip_km": "TODO"
+    },
+    {
+      "id": "japan-trip-1",
+      "name": "Japan (trip 1)",
+      "country_code": "JP",
+      "start_date": "TODO",
+      "end_date": "TODO",
+      "cities": [],
+      "tags": [],
+      "summary": "TODO",
+      "hero_place_id": "TODO"
+    },
+    {
+      "id": "japan-trip-2",
+      "name": "Japan (trip 2)",
+      "country_code": "JP",
+      "start_date": "TODO",
+      "end_date": "TODO",
+      "cities": [],
+      "tags": [],
+      "summary": "TODO",
+      "hero_place_id": "TODO"
+    }
+  ]
+}

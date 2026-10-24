@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trips.schema.json",
+  "title": "MILES trips",
+  "description": "One entry per journey. The same country visited twice is two journeys. Races go in races.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "trips"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "trips": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/trip"
+      }
+    }
+  },
+  "$defs": {
+    "trip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "country_code",
+        "start_date",
+        "end_date",
+        "cities",
+        "tags",
+        "summary",
+        "hero_place_id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "country_code": {
+          "$ref": "common.schema.json#/$defs/countryCode"
+        },
+        "start_date": {
+          "$ref": "common.schema.json#/$defs/isoDateOrTodo"
+        },
+        "end_date": {
+          "$ref": "common.schema.json#/$defs/isoDateOrTodo"
+        },
+        "cities": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/shortText"
+          },
+          "uniqueItems": true,
+          "description": "Towns and areas on the route, in order."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/placeCategory"
+          },
+          "uniqueItems": true
+        },
+        "summary": {
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "hero_place_id": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/id"
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "road_trip_km": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100000
+            },
+            {
+              "$ref": "common.schema.json#/$defs/todo"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

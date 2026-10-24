@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "session-card.schema.json",
+  "title": "SPEAKLOG Session Card",
+  "description": "One practice session. Scores are 0-5 and must come from your own assessment or coach; never invented.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "date",
+    "type",
+    "duration_min",
+    "topic"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/sessionId"
+    },
+    "date": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "type": {
+      "enum": [
+        "speaking",
+        "listening",
+        "movie",
+        "reading",
+        "shadowing",
+        "travel-simulation",
+        "storytelling"
+      ]
+    },
+    "duration_min": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 600
+    },
+    "topic": {
+      "$ref": "common.schema.json#/$defs/shortText"
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "fluency": {
+          "$ref": "common.schema.json#/$defs/score"
+        },
+        "grammar": {
+          "$ref": "common.schema.json#/$defs/score"
+        },
+        "vocabulary": {
+          "$ref": "common.schema.json#/$defs/score"
+        },
+        "communication": {
+          "$ref": "common.schema.json#/$defs/score"
+        },
+        "listening": {
+          "$ref": "common.schema.json#/$defs/score"
+        }
+      }
+    },
+    "strength": {
+      "$ref": "common.schema.json#/$defs/shortText"
+    },
+    "focus": {
+      "$ref": "common.schema.json#/$defs/shortText"
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "said",
+          "natural",
+          "tag"
+        ],
+        "properties": {
+          "said": {
+            "$ref": "common.schema.json#/$defs/text"
+          },
+          "natural": {
+            "$ref": "common.schema.json#/$defs/text"
+          },
+          "tag": {
+            "$ref": "common.schema.json#/$defs/id",
+            "description": "Error pattern, e.g. past-tense."
+          }
+        }
+      }
+    },
+    "new_phrases": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/shortText"
+      }
+    },
+    "coach_note": {
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "scenario": {
+      "enum": [
+        "airport",
+        "hotel",
+        "restaurant",
+        "shopping",
+        "car-rental",
+        "small-talk",
+        "storytelling",
+        "problem-solving"
+      ],
+      "description": "For travel simulations: counts toward Trip Readiness."
+    },
+    "comprehension_pct": {
+      "$ref": "common.schema.json#/$defs/percent"
+    },
+    "library_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    }
+  }
+}

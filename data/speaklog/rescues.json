@@ -1,0 +1,5 @@
+{
+  "$schema": "../../schemas/rescues.schema.json",
+  "schema_version": 1,
+  "rescues": []
+}

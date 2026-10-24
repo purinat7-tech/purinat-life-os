@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phrases.schema.json",
+  "title": "SPEAKLOG Phrase Bank",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "phrases"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "phrases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/phrase"
+      }
+    }
+  },
+  "$defs": {
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "phrase",
+        "natural",
+        "situation",
+        "category",
+        "status",
+        "added"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "phrase": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "natural": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "situation": {
+          "$ref": "common.schema.json#/$defs/shortText"
+        },
+        "category": {
+          "$ref": "common.schema.json#/$defs/phraseCategory"
+        },
+        "status": {
+          "enum": [
+            "NEW",
+            "LEARNING",
+            "MASTERED"
+          ]
+        },
+        "added": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "session_id": {
+          "$ref": "common.schema.json#/$defs/sessionId"
+        }
+      }
+    }
+  }
+}

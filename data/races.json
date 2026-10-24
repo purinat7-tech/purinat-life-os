@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/races.schema.json",
+  "schema_version": 1,
+  "races": [
+    {
+      "id": "melbourne-marathon-2026",
+      "trip_id": "australia-2026",
+      "name": "Melbourne Marathon",
+      "date": "2026-10-11",
+      "city": "Melbourne",
+      "country_code": "AU",
+      "notes": "Race, excluded from all travel statistics. The date is the public date of the 2026 Melbourne Marathon (Sunday 11 October, melbournemarathon.com.au); change it if you ran a different festival race."
+    }
+  ]
+}
